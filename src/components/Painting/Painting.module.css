@@ -1,0 +1,29 @@
+.list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	text-align: center;
+}
+
+.link {
+	text-decoration: none;
+	color: red;
+}
+
+.link:hover {
+	color: blue;
+}
+
+.btn {
+	width: 100%;
+	border: none;
+
+}
+
+.btn:hover {
+	background-color: red;
+	border: 2px solid blue;
+	border-radius: 10px;
+	cursor: pointer;
+}
