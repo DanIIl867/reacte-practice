@@ -1,14 +1,15 @@
-import s from './ColorPicker.module.css'
+import { Container, Title, ColorPickerOptions } from './ColorPicker.styled';
 
 export const ColorPicker = ({ options }) => {
 	return (
-		<div className={s.conteiner}>
-			<h2 className={s.title}>Color Picker</h2>
+		<Container>
+			<Title>Color Picker</Title>
 			{options.map(({ label, color }) => (
-				<div className={s.option} style={{ backgroundColor: color }}>
+				<ColorPickerOptions key={label}
+					bgc={color}>
 					<span >{label}</span>
-				</div>
+				</ColorPickerOptions>
 			))}
-		</div>
+		</Container>
 	)
 }
