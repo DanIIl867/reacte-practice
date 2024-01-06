@@ -18,39 +18,50 @@
 import './App.css';
 // import { Header } from './components/Header'
 // import painting from './painting.json'
-// import { PaintingList } from '../PaintingList/PaintingList'
+import paintingData from '../../painting'
+import { PaintingList } from '../PaintingList/PaintingList'
 // import styles from 'App.module.css'
 import { ColorPicker } from 'components/ColorPicker/ColorPicker';
 import { Alert } from 'components/Alert/Alert';
 // const box = { color: 'red', fontSize: 18, margin: '50px 50px' };
-import { Container, Title } from './App.styled';
+// import { Container, Title } from './App.styled';
 import { colorPickerOptions } from 'components/ColorPicker/ColorPicker.styled';
+import { Counter } from 'components/Counter/Counter';
+import { Component } from 'react';
 
-export function App() {
-	return (
-		<div>
+export class App extends Component {
 
-			<Container>
-				<Title>Title</Title>
-			</Container>
+	state = {
+		data: paintingData
+	}
 
-			{/* <Header>
-				<nav>
-					Навігація
-				</nav>
-			</Header> */}
-			{/* <PaintingList painting={painting} /> */}
+	render() {
+		return (
+			<div>
+				{/* <Counter /> */}
+				{/* <Container>
+					<Title>Title</Title>
+				</Container> */}
 
-			{/* <div style={box}>бокс</div>
-			<p className='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ex totam non optio eligendi! Porro autem quae non nisi quam nam aut nesciunt, tempore fuga sequi totam mollitia eligendi nobis?</p>
-			<p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ex totam non optio eligendi! Porro autem quae non nisi quam nam aut nesciunt, tempore fuga sequi totam mollitia eligendi nobis?</p> */}
+				{/* <Header>
+					<nav>
+						Навігація
+					</nav>
+				</Header> */}
+				<PaintingList painting={this.state.data} />
 
-			<ColorPicker options={colorPickerOptions} />
+				{/* <div style={box}>бокс</div>
+				<p className='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ex totam non optio eligendi! Porro autem quae non nisi quam nam aut nesciunt, tempore fuga sequi totam mollitia eligendi nobis?</p>
+				<p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ex totam non optio eligendi! Porro autem quae non nisi quam nam aut nesciunt, tempore fuga sequi totam mollitia eligendi nobis?</p> */}
 
-			<Alert text="Останнє попередження" type="warning" />
-			<Alert text="Ура! Все ок!" type="success" />
-			<Alert text="О жах - все пропало" type="error" />
-			{/* <GlobalStyle /> */}
-		</div>
-	)
+				{/* <ColorPicker options={colorPickerOptions} />
+	
+				<Alert text="Останнє попередження" type="warning" />
+				<Alert text="Ура! Все ок!" type="success" />
+				<Alert text="О жах - все пропало" type="error" /> */}
+				{/* <GlobalStyle /> */}
+			</div >
+		)
+	}
+
 }
