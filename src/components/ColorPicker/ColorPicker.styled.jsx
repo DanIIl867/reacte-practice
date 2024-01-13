@@ -23,4 +23,5 @@ export const ColorPickerOptions = styled.div`
 	height: 40px;
 	margin: 8px;
 	background-color: ${({ bgc }) => bgc};
+	border: ${(props)=>props.idx === props.currentIdx ? '2px solid black' : 'none'};
 `

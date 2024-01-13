@@ -28,6 +28,7 @@ import { Alert } from 'components/Alert/Alert';
 import { colorPickerOptions } from 'components/ColorPicker/ColorPicker.styled';
 import { Counter } from 'components/Counter/Counter';
 import { Component } from 'react';
+import {Dropdown} from '../DropdownMenu/DropdownMenu'
 
 export class App extends Component {
 
@@ -38,6 +39,8 @@ export class App extends Component {
 	render() {
 		return (
 			<div>
+
+				{/* <Dropdown/> */}
 				{/* <Counter /> */}
 				{/* <Container>
 					<Title>Title</Title>
@@ -48,15 +51,15 @@ export class App extends Component {
 						Навігація
 					</nav>
 				</Header> */}
-				<PaintingList painting={this.state.data} />
+				{/* <PaintingList painting={this.state.data} /> */}
 
 				{/* <div style={box}>бокс</div>
 				<p className='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ex totam non optio eligendi! Porro autem quae non nisi quam nam aut nesciunt, tempore fuga sequi totam mollitia eligendi nobis?</p>
 				<p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ex totam non optio eligendi! Porro autem quae non nisi quam nam aut nesciunt, tempore fuga sequi totam mollitia eligendi nobis?</p> */}
 
-				{/* <ColorPicker options={colorPickerOptions} />
+				<ColorPicker options={colorPickerOptions}/>
 	
-				<Alert text="Останнє попередження" type="warning" />
+				{/* <Alert text="Останнє попередження" type="warning" />
 				<Alert text="Ура! Все ок!" type="success" />
 				<Alert text="О жах - все пропало" type="error" /> */}
 				{/* <GlobalStyle /> */}
