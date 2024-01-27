@@ -29,16 +29,35 @@ import { colorPickerOptions } from 'components/ColorPicker/ColorPicker.styled';
 import { Counter } from 'components/Counter/Counter';
 import { Component } from 'react';
 import {Dropdown} from '../DropdownMenu/DropdownMenu'
+import {Form} from '../Form/Form'
+
 
 export class App extends Component {
-
-	state = {
-		data: paintingData
-	}
 
 	render() {
 		return (
 			<div>
+				{/* <form>
+					<label>
+						<input type="text" name="whoIs" value={this.state.whoIs} onChange={this.getName}/>
+					</label>
+						<br />
+					<label>
+						<input type="radio" name='student' checked={this.state.profession === 'student'} onChange={this.handleRadionChange} />
+						Student
+					</label>
+						<br />
+					<label>
+						<input type="radio" name='professor' checked={this.state.profession === 'professor'} onChange={this.handleRadionChange} />
+						Professor
+					</label>
+						<br />
+					<label>
+						<input type="checkbox" checked={this.state.license} name='lisince' onChange={this.handleCheckboxChange} />
+						Погоджуюсь на участь в конферкнсії</label>
+				</form> */}
+
+				<Form/>
 
 				{/* <Dropdown/> */}
 				{/* <Counter /> */}
@@ -57,7 +76,7 @@ export class App extends Component {
 				<p className='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ex totam non optio eligendi! Porro autem quae non nisi quam nam aut nesciunt, tempore fuga sequi totam mollitia eligendi nobis?</p>
 				<p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ex totam non optio eligendi! Porro autem quae non nisi quam nam aut nesciunt, tempore fuga sequi totam mollitia eligendi nobis?</p> */}
 
-				<ColorPicker options={colorPickerOptions}/>
+				{/* <ColorPicker options={colorPickerOptions}/> */}
 	
 				{/* <Alert text="Останнє попередження" type="warning" />
 				<Alert text="Ура! Все ок!" type="success" />
