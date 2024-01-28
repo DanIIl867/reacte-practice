@@ -18,11 +18,11 @@
 import './App.css';
 // import { Header } from './components/Header'
 // import painting from './painting.json'
-import paintingData from '../../painting'
-import { PaintingList } from '../PaintingList/PaintingList'
+// import paintingData from '../../painting'
+// import { PaintingList } from '../PaintingList/PaintingList'
 // import styles from 'App.module.css'
-import { ColorPicker } from 'components/ColorPicker/ColorPicker';
-import { Alert } from 'components/Alert/Alert';
+// import { ColorPicker } from 'components/ColorPicker/ColorPicker';
+// import { Alert } from 'components/Alert/Alert';
 // const box = { color: 'red', fontSize: 18, margin: '50px 50px' };
 // import { Container, Title } from './App.styled';
 import { colorPickerOptions } from 'components/ColorPicker/ColorPicker.styled';
