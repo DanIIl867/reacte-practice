@@ -1,3 +1,4 @@
-export function CaunterValue({ value }) {
-	return <span className="Counter_value"> {value}</span>
-}
+export function CounterValue(props){
+	const {value} = props;
+	return <span className="Counter__value">{value}</span>
+	}

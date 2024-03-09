@@ -2,7 +2,7 @@
 	"name": "react-homework-practice",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://DanIIl867.github.io/react-practice/",
+	"homepage": "https://DanIIl867.github.io/reacte-practice/",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.3",
 		"@testing-library/react": "^12.1.4",

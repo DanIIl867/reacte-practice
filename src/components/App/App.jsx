@@ -25,11 +25,12 @@ import './App.css';
 // import { Alert } from 'components/Alert/Alert';
 // const box = { color: 'red', fontSize: 18, margin: '50px 50px' };
 // import { Container, Title } from './App.styled';
-import { colorPickerOptions } from 'components/ColorPicker/ColorPicker.styled';
+// import { colorPickerOptions } from 'components/ColorPicker/ColorPicker.styled';
 import { Counter } from 'components/Counter/Counter';
 import { Component } from 'react';
-import {Dropdown} from '../DropdownMenu/DropdownMenu'
-import {Form} from '../Form/Form'
+// import {Dropdown} from '../DropdownMenu/DropdownMenu'
+// import {Form} from '../Form/Form'
+// import { Form } from 'components/SignupForm/Form';
 
 
 export class App extends Component {
@@ -37,6 +38,8 @@ export class App extends Component {
 	render() {
 		return (
 			<div>
+				{/* <Form/> */}
+
 				{/* <form>
 					<label>
 						<input type="text" name="whoIs" value={this.state.whoIs} onChange={this.getName}/>
@@ -57,10 +60,10 @@ export class App extends Component {
 						Погоджуюсь на участь в конферкнсії</label>
 				</form> */}
 
-				<Form/>
+				{/* <Form/> */}
 
 				{/* <Dropdown/> */}
-				{/* <Counter /> */}
+				<Counter />
 				{/* <Container>
 					<Title>Title</Title>
 				</Container> */}
