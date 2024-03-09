@@ -1,4 +1,4 @@
-import { Component, useEffect, useState } from "react";
+import {useEffect, useState } from "react";
 import "components/Counter/Counter.css"
 // import { Buttons } from "./Buttons";
 // import { CaunterValue } from "./CounterValue";
