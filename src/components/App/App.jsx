@@ -26,11 +26,12 @@ import './App.css';
 // const box = { color: 'red', fontSize: 18, margin: '50px 50px' };
 // import { Container, Title } from './App.styled';
 // import { colorPickerOptions } from 'components/ColorPicker/ColorPicker.styled';
-import { Counter } from 'components/Counter/Counter';
+// import { Counter } from 'components/Counter/Counter';
 import { Component } from 'react';
 // import {Dropdown} from '../DropdownMenu/DropdownMenu'
 // import {Form} from '../Form/Form'
 // import { Form } from 'components/SignupForm/Form';
+import { Clock } from 'components/Clock/Clock';
 
 
 export class App extends Component {
@@ -38,6 +39,7 @@ export class App extends Component {
 	render() {
 		return (
 			<div>
+				<Clock/>
 				{/* <Form/> */}
 
 				{/* <form>
@@ -63,7 +65,7 @@ export class App extends Component {
 				{/* <Form/> */}
 
 				{/* <Dropdown/> */}
-				<Counter />
+				{/* <Counter /> */}
 				{/* <Container>
 					<Title>Title</Title>
 				</Container> */}
