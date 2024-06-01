@@ -17,7 +17,7 @@
 
 import './App.css';
 // import { Header } from './components/Header'
-// import painting from './painting.json'
+// import painting from 'sr/painting.json'
 // import paintingData from '../../painting'
 // import { PaintingList } from '../PaintingList/PaintingList'
 // import styles from 'App.module.css'
@@ -31,7 +31,7 @@ import { Component } from 'react';
 // import {Dropdown} from '../DropdownMenu/DropdownMenu'
 // import {Form} from '../Form/Form'
 // import { Form } from 'components/SignupForm/Form';
-import { Clock } from 'components/Clock/Clock';
+// import { Clock } from 'components/Clock/Clock';
 
 
 export class App extends Component {
@@ -39,7 +39,7 @@ export class App extends Component {
 	render() {
 		return (
 			<div>
-				<Clock/>
+				{/* <Clock/> */}
 				
 				{/* <Form/> */}
 
